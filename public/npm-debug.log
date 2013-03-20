@@ -1,0 +1,41 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'path' ]
+info using npm@1.1.16
+info using node@v0.6.15
+verbose config file /home/martin/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /home/martin/node_modules/jQuery/package.json
+verbose caching /home/martin/node_modules/jsdom/package.json
+verbose caching /home/martin/node_modules/xmlhttprequest/package.json
+verbose caching /home/martin/node_modules/net/package.json
+verbose caching /home/martin/node_modules/backbone/package.json
+verbose caching /home/martin/node_modules/connect/package.json
+verbose cache add [ 'path', null ]
+silly cache add: name, spec, args [ undefined, 'path', [ 'path', null ] ]
+verbose parsed url { pathname: 'path', path: 'path', href: 'path' }
+verbose addNamed [ 'path', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'path', '', false ]
+verbose raw, before any munging path
+verbose url resolving [ 'https://registry.npmjs.org/', './path' ]
+verbose url resolved https://registry.npmjs.org/path
+http GET https://registry.npmjs.org/path
+ERR! Error: getaddrinfo ENOENT
+ERR!     at errnoException (dns.js:31:11)
+ERR!     at Object.onanswer [as oncomplete] (dns.js:140:16)
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 3.2.0-38-generic
+ERR! command "node" "/usr/local/bin/npm" "install" "path"
+ERR! cwd /home/martin/Dokumente/JS/backbone/backbone-fundamentals/myexamplecodetut/public
+ERR! node -v v0.6.15
+ERR! npm -v 1.1.16
+ERR! syscall getaddrinfo
+ERR! code ENOTFOUND
+ERR! message getaddrinfo ENOENT
+ERR! errno {}
+verbose exit [ 1, true ]

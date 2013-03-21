@@ -33,6 +33,23 @@ app.get('/api/books', function (req, res) {
     });
 });
 
+//Insert a new book
+app.post('/api/books', function (req, res) {
+    var book = new BookModel({
+        title:req.body.title,
+        author:req.body.author,
+        releaseDate:req.body.releaseDate
+    });
+    book.save(function (err) {
+        if (!err) {
+            return console.log('created');
+        } else {
+            return console.log(err);
+        }
+    });
+    return res.send(book);
+});
+
 //Connect to database
 mongoose.connect('mongodb://localhost/library_database');
 

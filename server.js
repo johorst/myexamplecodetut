@@ -67,7 +67,7 @@ app.put('/api/books/:id', function(req, res){
         book.title = req.body.title;
         book.author = req.body.author;
         book.releaseDate = req.body.releaseDate;
-        book.keywords = keywords:req.body.keywords;
+        book.keywords = req.body.keywords;
         return book.save(function(err){
             if(!err){
                 console.log('book updated');
